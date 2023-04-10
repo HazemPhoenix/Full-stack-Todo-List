@@ -1,0 +1,100 @@
+:root {
+  --primary-color: #333333; /* Dark gray */
+  --secondary-color: #666666; /* Medium gray */
+  --tertiary-color: #cccccc; /* Light gray */
+  --background-color: #111111; /* Off-white */
+  --text-color: #222222; /* Darker gray */
+}
+
+div {
+  background-color: var(--background-color);
+  height: fit-content;
+  min-width: 25vw;
+  width: fit-content;
+  max-width: 30vw;
+  margin: auto;
+  padding: 0.1rem;
+  border-radius: 1rem;
+}
+
+form {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  border: 1px solid var(--text-color);
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+}
+
+label {
+  font-size: 2em;
+  color: var(--tertiary-color);
+}
+
+input {
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  border: 1px solid var(--text-color);
+}
+
+button {
+  margin-top: 0.5rem;
+  padding: 0.3rem;
+  font-size: large;
+  border-radius: 0.5rem;
+  border: 1px solid var(--text-color);
+  transition: 0.3s;
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 12px;
+}
+
+.task-list li {
+  width: 100%;
+  margin: 0.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: 1px solid var(--text-color);
+  border-radius: 0.5rem;
+  background-color: var(--tertiary-color);
+  font-size: 1.5em;
+  color: var(--text-color);
+  word-break: break-word;
+}
+
+p {
+  color: var(--tertiary-color);
+  font-size: 1.5em;
+}
+
+.task-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+  border-radius: 4px;
+}
+
+li button {
+  font-size: 0.3em;
+}
